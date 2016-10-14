@@ -32,6 +32,6 @@
     }
   ],
   "scripts": {
-    "start": "node your-script.js"
+    "start": "node server.js"
   }
 }
