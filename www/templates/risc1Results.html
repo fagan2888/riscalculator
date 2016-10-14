@@ -1,0 +1,52 @@
+<ion-view title="Risc 1 Results" id="page3">
+    <ion-content padding="true" class="has-header">
+        <div class="list card" id="risc1Results-card21">
+            <ion-item class="item-icon-left balanced" id="risc1Results-list-item11">
+                <i class="icon ion-android-contract"></i>{{survival1Year}}%</ion-item>
+            <div class="item item-body" id="risc1Results-list-item-container4">
+                <div id="risc1Results-markdown5" style="color:#000000;">
+                    <p style="margin-top:0px;">
+                        <strong>1 Year</strong> survival rate</p>
+                </div>
+            </div>
+        </div>
+        <div class="list card" id="risc1Results-card23">
+            <ion-item class="item-icon-left positive" id="risc1Results-list-item14">
+                <i class="icon ion-android-contract"></i>{{survival2Year}}%</ion-item>
+            <div class="item item-body" id="risc1Results-list-item-container6">
+                <div id="risc1Results-markdown7" style="color:#000000;">
+                    <p style="margin-top:0px;">
+                        <strong>2 Years</strong> survival rate</p>
+                </div>
+            </div>
+        </div>
+        <div class="list card" id="risc1Results-card24">
+            <ion-item class="item-icon-left assertive" id="risc1Results-list-item15">
+                <i class="icon ion-android-contract"></i>{{survival5Year}}%</ion-item>
+            <div class="item item-body" id="risc1Results-list-item-container7">
+                <div id="risc1Results-markdown8" style="color:#000000;">
+                    <p style="margin-top:0px;">
+                        <strong>5 Years</strong> survival rate</p>
+                </div>
+            </div>
+        </div>
+        <div id="risc1Results-container1">
+            <form id="risc1Results-form11" class="list">
+                <div class="list card" id="risc1Results-card211">
+                    <form id="risc1Results-form12" class="list">
+                        <label class="item item-select" id="risc1Results-select11" name="response_to_ct">
+                            <span class="input-label" ng-model="params.response">Response to CT</span>
+                            <select>
+                                <option value="CR">CR</option>
+                                <option value="PR">PR</option>
+                                <option value="SD">SD</option>
+                                <option value="PD">PD</option>
+                            </select>
+                        </label>
+                        <a ui-sref="risc2Results" id="risc1Results-button3" class="button button-positive  button-block">Update and compute Risc 2</a>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>
