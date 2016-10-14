@@ -36,10 +36,10 @@ function ($scope, $stateParams, $state, $riscService) {
   }
 }])
 
-.controller('risc2ResultsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+.controller('risc2ResultsCtrl', ['$scope', '$stateParams', '$state', 'RiscService', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
+function ($scope, $stateParams, $state, $riscService) {
   $scope.survival1Year = $riscService.computeRisc2Year1()*100;
   $scope.survival2Year = $riscService.computeRisc2Year2()*100;
   $scope.survival5Year = $riscService.computeRisc2Year5()*100;
@@ -58,4 +58,4 @@ function ($scope, $stateParams, $state) {
       alert("Insert your full name and a valid email address to continue, please.");
     }
   }
-}])
+}]);
