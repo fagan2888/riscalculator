@@ -30,7 +30,7 @@
       "version": "",
       "locator": "ios"
     }
-  ]
+  ],
   "scripts": {
     "start": "node your-script.js"
   }
