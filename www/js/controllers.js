@@ -40,6 +40,7 @@ function ($scope, $stateParams, $state, $riscService) {
 // You can include any angular dependencies as parameters for this function
 // TIP: Access Route Parameters for your page via $stateParams.parameterName
 function ($scope, $stateParams, $state, $riscService) {
+  $scope.params = $riscService.params;
   $scope.survival1Year = $riscService.computeRisc2Year1()*100;
   $scope.survival2Year = $riscService.computeRisc2Year2()*100;
   $scope.survival5Year = $riscService.computeRisc2Year5()*100;

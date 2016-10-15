@@ -2,7 +2,7 @@
     <ion-content padding="true" class="has-header">
         <form id="risc1-form2" class="list">
             <label class="item item-input" id="risc1-input8">
-                <span class="input-label">WBC</span>
+                <span class="input-label">WBC (x103/µL)</span>
                 <input type="number" placeholder="WBC" ng-model="params.wbc">
             </label>
             <label class="item item-select" id="risc1-select4" name="ecog_ps">
@@ -13,7 +13,7 @@
                     <option value=">1">&gt;1</option>
                 </select>
             </label>
-            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-model="params.metastases" name="methastases">Metastases</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-model="params.metastases" name="methastases">Lung/Liver/Bone Metastases</ion-toggle>
             <label class="item item-input" id="risc1-input9">
                 <span class="input-label">BMI</span>
                 <input type="number" placeholder="BMI" ng-model="params.bmi">
@@ -22,7 +22,7 @@
                 <span class="input-label">Ethnicity</span>
                 <select ng-model="params.ethnicity">
                     <option value="Other / Mixed">Other / Mixed</option>
-                    <option value="Not Available">Not Available</option>
+                    <option value="N/A">Not Available</option>
                     <option value="Not Hispanic Latino / Black">Not Hispanic Latino / Black</option>
                     <option value="Not Hispanic Latino / White">Not Hispanic Latino / White</option>
                     <option value="Hispanic or Latino">Hispanic or Latino</option>
@@ -32,8 +32,8 @@
             <label class="item item-select" id="risc1-select6">
                 <span class="input-label">CT Type</span>
                 <select ng-model="params.ct_type">
-                    <option value="Carboplatin">Carboplatin</option>
-                    <option value="Cisplatin">Cisplatin</option>
+                    <option value="carboplatin">Carboplatin</option>
+                    <option value="cisplatin">Cisplatin</option>
                 </select>
             </label>
             <a ng-click='checkAndContinue()' id="risc1-button2" class="button button-positive  button-block">Compute Survival Rates</a>
