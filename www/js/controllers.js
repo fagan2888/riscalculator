@@ -6,7 +6,7 @@ angular.module('app.controllers', [])
 function ($scope, $stateParams, $state, $riscService) {
   $scope.params = {};
   $scope.checkAndContinue = function(){
-      var required = ["wbc","ecog_ps","metastases","bmi","ethnicity","perioperative_sys_therapy","ct_type"];
+      var required = ["wbc","ecog_ps","bmi","ethnicity","ct_type"];
       for(var i = 0; i < required.length; i++){
         var param = required[i];
         if(!$scope.params[param] || $scope.params[param].$invalid){
@@ -52,7 +52,6 @@ function ($scope, $stateParams, $state, $riscService) {
 function ($scope, $stateParams, $state) {
   $scope.user_data = {};
   $scope.checkAndContinue = function(){
-    console.log("pippo");
     if($scope.user_data['email_address'] && $scope.user_data['full_name'] && !$scope.user_data['full_name'].$invalid){
       $state.go("risc1");
     }else{

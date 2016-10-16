@@ -26,9 +26,9 @@ angular.module('app.services', [])
     if(type == 2){
       a *= 0.83558;
       a -= 0.91268;
-      a += (params['response'] == 'PR' ? 1 : 0) * 0.83128
-      + (params['response'] == 'SD' ? 1 : 0) * 0.90433
-      + (params['response'] == 'PD' ? 1 : 0) * 1.57956;
+      a += (params['response'] == 'PR' ? 1 : 0) * 0.83128;
+      a += (params['response'] == 'SD' ? 1 : 0) * 0.90433;
+      a += (params['response'] == 'PD' ? 1 : 0) * 1.57956;
       s = {
         'carboplatin':{1:0.49306, 2:0.25312, 5:0.08480},
         'cisplatin':{1:0.65774, 2:0.31090, 5:0.13394}

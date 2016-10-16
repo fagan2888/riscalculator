@@ -1,33 +1,61 @@
 <ion-view title="Risc Calculator" id="page4">
-    <ion-content padding="true" class="has-header">
-        <div class="list card" id="riscCalculator-card28">
-            <div class="item item-body" id="riscCalculator-list-item-container12">
-                <h2 id="riscCalculator-heading2" style="color:#000000;text-align:center;">Legal Disclaimer</h2>
-                <div id="riscCalculator-markdown14" style="color:#000000;">
-                    <p style="margin-top:0px;">This communication, which may contain confidential and/or legally privileged information, is intended solely for the use of the intended addressees. All information or advice contained in this communication is subject to the terms
-                        and conditions provided by the agreement governing each particular client engagement. If you have received this communication in error, please notify us immediately by responding to this email; then please delete it from your system.
-                        Any use, disclosure, copying or distribution of the contents of this communication by a not-intended recipient or in violation of the purposes of this communication is strictly prohibited and may be unlawful. The transmission technology
-                        used to send this mail can grant neither the sender</p>
-                </div>
-                <div class="spacer" style="width: 268px; height: 51px;"></div>
-                <form id="riscCalculator-form7" class="list">
-                    <label class="item item-input" id="riscCalculator-input6" name="email_address">
-                        <input type="email" placeholder="Email Address" ng-model="user_data.email_address">
-                    </label>
-                    <label class="item item-input" id="riscCalculator-input7" name="full_name">
-                        <input type="text" placeholder="Full Name" ng-model="user_data.full_name">
-                    </label>
-                    <button ng-click="checkAndContinue()" id="riscCalculator-button6" class="button button-positive  button-block">Accept and continue</button>
-                    <div id="riscCalculator-markdown15" style="color:#000000;text-align:center;">
-                        <p>
-                            <strong>Sponsored By:</strong>
-                        </p>
-                    </div>
-                    <div>
-                        <img src="img/YTyUlHsRjCNU9pmRonht_LogoPalinuro.jpg" style="height:90px; display: block; margin-left: auto; margin-right: auto;">
-                    </div>
-                </form>
-            </div>
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="riscCalculator-card28">
+      <div class="item item-body" id="riscCalculator-list-item-container12">
+        <h2 id="riscCalculator-heading2" style="color:#000000;text-align:center;">Legal Disclaimer</h2>
+        <div id="riscCalculator-markdown14" style="color:#000000;">
+          <p style="margin-top:0px;">
+            Overview:
+            This App is meant to be used only by physicians ad it is not meant to make clinical decisions (the clinical
+            usefulness of the two models, RISC1 and RISC2, has not been tested) but to be used as an informtive tool to
+            improve the predictive capability of a physician.
+            <br><br>
+            Two kinds of predictions are possible:
+            <br><br>
+            <b>RISC1:</b> prediction of overall survival (OS) of patients with metastatic urothelial carcinoma who have
+            received first-line platinum-based chemotherapy.
+            <br><br>
+            <b>RISC2:</b> updated prediction of OS for the same patients after completion of first-line chemotherapy
+            once the information of response to chemotherapy is available.
+            <br><br>
+            Both models provide OS estimates after stratification for the platinum type (i.e. cisplatin vs carboplatin)
+            and can provide the benchmark for noncomparative clinical trials with novel targeted drugs or immunotherapy
+            in the same clinical setting.
+            <br><br>
+            The model on which the App is based was developed by the Retrospective International Study of
+            Invasive/Advanced Cancer of the Urothelium (RISC) group, in collaboration with the Unit of Medical
+            Statistics and Biometry of the Fondazione IRCCS Istituto Nazionale dei Tumori, Milano, Italy. Data were
+            obtained from 29 centers worldwide.
+            <br><br>
+            The reference manuscript is:<br>
+            Necchi A, et al. Nomogram-based Prediction of Overall Survival in Patients with Metastatic Urothelial
+            Carcinoma Receiving First-line Platinum-based Chemotherapy: Retrospective International Study of Invasive/
+            Advanced Cancer of the Urothelium (RISC). Eur Urol (2016),
+            <a>http://dx.doi.org/10.1016/j.eururo.2016.09.042</a>
+          </p>
         </div>
-    </ion-content>
+        <div class="spacer" style="width: 268px; height: 51px;"></div>
+        <form id="riscCalculator-form7" class="list">
+          <label class="item item-input" id="riscCalculator-input6" name="email_address">
+            <input type="email" placeholder="Email Address" ng-model="user_data.email_address">
+          </label>
+          <label class="item item-input" id="riscCalculator-input7" name="full_name">
+            <input type="text" placeholder="Full Name" ng-model="user_data.full_name">
+          </label>
+          <button ng-click="checkAndContinue()" id="riscCalculator-button6"
+                  class="button button-positive  button-block">Accept and continue
+          </button>
+          <div id="riscCalculator-markdown15" style="color:#000000;text-align:center;">
+            <p>
+              <strong>Sponsored By:</strong>
+            </p>
+          </div>
+          <div>
+            <img src="img/YTyUlHsRjCNU9pmRonht_LogoPalinuro.jpg"
+                 style="height:90px; display: block; margin-left: auto; margin-right: auto;">
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
 </ion-view>

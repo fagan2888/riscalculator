@@ -13,7 +13,7 @@
                     <option value=">1">&gt;1</option>
                 </select>
             </label>
-            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-model="params.metastases" name="methastases">Lung/Liver/Bone Metastases</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-init="params.metastases=false" ng-model="params.metastases" name="methastases">Lung/Liver/Bone Metastases</ion-toggle>
             <label class="item item-input" id="risc1-input9">
                 <span class="input-label">BMI</span>
                 <input type="number" placeholder="BMI" ng-model="params.bmi">
@@ -28,7 +28,7 @@
                     <option value="Hispanic or Latino">Hispanic or Latino</option>
                 </select>
             </label>
-            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle6" name="pst" ng-model="params.perioperative_sys_therapy">Perioperative Sys. Therapy</ion-toggle>
+            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle6" name="pst" ng-init="params.perioperative_sys_therapy=false" ng-model="params.perioperative_sys_therapy">Perioperative Sys. Therapy</ion-toggle>
             <label class="item item-select" id="risc1-select6">
                 <span class="input-label">CT Type</span>
                 <select ng-model="params.ct_type">
