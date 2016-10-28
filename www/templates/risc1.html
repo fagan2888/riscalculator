@@ -2,8 +2,8 @@
     <ion-content padding="true" class="has-header">
         <form id="risc1-form2" class="list">
             <label class="item item-input" id="risc1-input8">
-                <span class="input-label">WBC (x103/µL)</span>
-                <input type="number" placeholder="WBC" ng-model="params.wbc">
+                <span class="input-label">WBC (x10<sup>3</sup>/µL)</span>
+                <input type="number" placeholder="WBC" min="0" ng-model="params.wbc">
             </label>
             <label class="item item-select" id="risc1-select4" name="ecog_ps">
                 <span class="input-label">ECOG PS</span>
@@ -14,10 +14,18 @@
                     <option value=">1">&gt;1</option>
                 </select>
             </label>
-            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-init="params.metastases=false" ng-model="params.metastases" name="methastases">Lung/Liver/Bone Metastases</ion-toggle>
+            <!--<ion-toggle toggle-class="toggle-positive" id="risc1-toggle5" ng-init="params.metastases=false" ng-model="params.metastases" name="methastases">Lung/Liver/Bone Metastases</ion-toggle>-->
+            <label class="item item-select" id="risc1-toggle5">
+                <span class="input-label">Lung/Liver/Bone Metastases</span>
+                <select ng-model="params.metastases">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </label>
+
             <label class="item item-input" id="risc1-input9">
                 <span class="input-label">BMI</span>
-                <input type="number" placeholder="BMI" ng-model="params.bmi">
+                <input type="number" placeholder="BMI" min="0" ng-model="params.bmi">
             </label>
             <label class="item item-select" id="risc1-select5" name="ethnicity">
                 <span class="input-label">Ethnicity</span>
@@ -29,7 +37,14 @@
                     <option value="Hispanic or Latino">Hispanic or Latino</option>
                 </select>
             </label>
-            <ion-toggle toggle-class="toggle-positive" id="risc1-toggle6" name="pst" ng-init="params.perioperative_sys_therapy=false" ng-model="params.perioperative_sys_therapy">Perioperative Sys. Therapy</ion-toggle>
+            <!--<ion-toggle toggle-class="toggle-positive" id="risc1-toggle6" name="pst" ng-init="params.perioperative_sys_therapy=false" ng-model="params.perioperative_sys_therapy">Perioperative Sys. Therapy</ion-toggle>-->
+            <label class="item item-select" id="risc1-toggle6">
+                <span class="input-label">Perioperative Sys. Therapy</span>
+                <select ng-model="params.perioperative_sys_therapy">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </label>
             <label class="item item-select" id="risc1-select6">
                 <span class="input-label">CT Type</span>
                 <select ng-model="params.ct_type">

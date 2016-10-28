@@ -16,7 +16,7 @@ angular.module('app.services', [])
     a += (params['ecog_ps'] == '1' ? 1 : 0) * 0.56707 + (params['ecog_ps'] == '>1' ? 1 : 0) * 0.87262 +
       (params['ecog_ps'] == 'N/A' ? 1 : 0) * 0.42481;
     a -= params['bmi'] * 0.04052;
-    a += params['metastases'] * 0.56707;
+    a += params['metastases'] * 0.51655;
     a += (params['ethnicity'] == 'Hispanic/Latino' ? 1 : 0) * 0.35295
       - (params['ethnicity'] == 'Not Hispanic Latino / Black' ? 1 : 0) * 0.25994
       - (params['ethnicity'] == 'Other/mixed' ? 1 : 0) * 0.80970
